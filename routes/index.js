@@ -28,7 +28,13 @@ router.post('/item/:id/update', item_controller.item_update_post);
 // GET request for one Item.
 router.get('/item/:id', item_controller.item_detail);
 
+// GET request for one Item.
+router.get('/item/:id/json', item_controller.item_detail_json);
+
 // GET request for list of all items.
 router.get('/itens', item_controller.item_list);
+
+// GET request for list of all items.
+router.get('/itens/json', item_controller.item_list_json);
 
 module.exports = router;

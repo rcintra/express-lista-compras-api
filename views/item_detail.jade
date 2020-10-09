@@ -1,0 +1,14 @@
+extends layout
+
+block content
+
+  h1 Item: #{item.nome}
+  p #{item.email}
+  
+  div(style='margin-left:20px;margin-top:20px')
+
+  hr
+  p
+    a(href=item._id+'/delete') Delete item
+  p
+    a(href=item._id+'/update') Update item
