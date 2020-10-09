@@ -1,5 +1,4 @@
 var Item = require('../models/item');
-
 var async = require('async');
 
 exports.index = function(req, res) {
